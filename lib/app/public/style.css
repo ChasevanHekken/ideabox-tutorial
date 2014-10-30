@@ -1,0 +1,106 @@
+.button {
+  border: 1px solid #f44c0e;
+  color: #fff;
+  background: tomato;
+  padding: 6px 12px;
+  border-radius: 3px;
+  margin-bottom: -4px;
+}
+
+.button:hover {
+  background: #f44c0e;
+}
+
+input {
+  border: 3px solid white;
+  -webkit-box-shadow:
+    inset 0 0 8px  rgba(0,0,0,0.1),
+          0 0 16px rgba(0,0,0,0.1);
+  -moz-box-shadow:
+    inset 0 0 8px  rgba(0,0,0,0.1),
+          0 0 16px rgba(0,0,0,0.1);
+  box-shadow:
+    inset 0 0 8px  rgba(0,0,0,0.1),
+          0 0 16px rgba(0,0,0,0.1);
+  padding: 1px;
+  background: rgba(255,255,255,0.5);
+  margin: 0 0 10px 0;
+}
+
+textarea {
+  border: 3px solid white;
+  -webkit-box-shadow:
+    inset 0 0 8px  rgba(0,0,0,0.1),
+          0 0 16px rgba(0,0,0,0.1);
+  -moz-box-shadow:
+    inset 0 0 8px  rgba(0,0,0,0.1),
+          0 0 16px rgba(0,0,0,0.1);
+  box-shadow:
+    inset 0 0 8px  rgba(0,0,0,0.1),
+          0 0 16px rgba(0,0,0,0.1);
+  padding: 1px;
+  background: rgba(255,255,255,0.5);
+  margin: 0 0 10px 0;
+}
+
+body {
+  background-color: #E6E6FA;
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+#entry {
+  width: 35%;
+  float: left;
+}
+
+#print_ideas {
+  width: 35%;
+  float: right;
+}
+
+#small_font {
+  font-size: x-small;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#plus {
+  display: inline;
+  padding: 4px 2px;
+}
+
+#edit {
+  display: inline;
+  padding: 4px 2px;
+}
+
+#delete {
+  display: inline;
+  padding: 4px 2px;
+}
+
+#word {
+  font-weight: bold;
+  display: inline;
+  padding-right: 4px;
+}
+
+textarea {
+  width: 300px;
+}
+
+#title_input {
+  width: 300px;
+}
+
+h1 {
+  margin-bottom: -5px;
+}
