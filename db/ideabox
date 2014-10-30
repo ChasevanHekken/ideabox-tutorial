@@ -1,0 +1,27 @@
+---
+ideas:
+- title: hello
+  description: hello
+  rank: 2
+  tag: hello
+  resource: nice resource broasdfasdf
+- title: idea title
+  description: idea description
+  rank: 13
+  tag: nice tag
+  resource: asdjklfjasdl;kf
+- title: hi there how
+  description: are you doing
+  rank: 10
+  tag: i'm fine thanks
+  resource: 
+- title: nice title bro
+  description: doing ok thanks
+  rank: 6
+  tag: i like your tag
+  resource: more resources
+- title: sweater title
+  description: hello description
+  rank: 4
+  tag: i like shoes
+  resource: adding resource

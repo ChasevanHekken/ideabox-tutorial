@@ -1,0 +1,49 @@
+    <h1 align="center">IdeaBox</h1>
+
+    <div id='entry'>
+      <form action='/' method='POST'>
+
+        <h2>Your Idea</h2>
+
+        <p id='word'>Title:</p><br/><input id='title_input' type='text' name='idea[title]'/><br/>
+        <p id='word'>Description:</p><br/><textarea name='idea[description]'></textarea><br/>
+        <p id='word'>Tag:</p><br/><textarea name='idea[tag]'></textarea><br/>
+        <input class='button' type='submit'/><br/>
+      </form>
+
+      <form action="/search_tag" method="GET">
+        <p id='word'>Search by Tag:</p><br/>
+        <p id='small_font'>(has to match exactly)</p>
+        <textarea name='tag'></textarea><br/>
+        <input class='button' type="submit"/><br/>
+      </form>
+
+      <form action="/search_description" method="GET">
+        <p id='word'>Search by Description:</p><br/>
+        <p id='small_font'>(can be part of description)</p>
+        <textarea name='search_description'></textarea><br/>
+        <input class='button' type="submit"/><br/>
+      </form>
+    </div>
+
+    <div id='print_ideas'>
+      <h2>Existing Ideas</h2>
+
+      <ul>
+        <% ideas.each do |idea| %>
+          <li>
+            <p id='word'>Title:</p><%= idea.title %> <br/>
+            <p id='word'>Description:</p><%= idea.description %> <br/>
+            <p id='word'>Tag:</p><%= idea.tag %> <br/>
+            <form id='plus' action="/<%= idea.id %>/like" method="POST" style="display: inline">
+              <input type="submit" value="+"/>
+            </form>
+            <form id='delete' action="/<%= idea.id %>" method="POST">
+              <input type="hidden" name="_method" value="DELETE">
+              <input type="submit" value="delete"/>
+            </form>
+            <a id='edit' href="/<%= idea.id %>/edit">Edit</a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
