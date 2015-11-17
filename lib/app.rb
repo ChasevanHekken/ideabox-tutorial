@@ -1,4 +1,6 @@
 require 'idea_box'
+require 'redis'
+require 'json'
 
 class IdeaBoxApp < Sinatra::Base
   set :method_override, true
@@ -6,6 +8,7 @@ class IdeaBoxApp < Sinatra::Base
 
   configure :development do
     register Sinatra::Reloader
+    $redis = Redis.new
   end
 
   not_found do
@@ -17,7 +20,8 @@ class IdeaBoxApp < Sinatra::Base
   end
 
   post '/' do
-    IdeaStore.create(params[:idea])
+    idea = IdeaStore.create(params[:idea])
+    $redis.publish("my_channel", params[:idea].to_json)
     redirect '/'
   end
 

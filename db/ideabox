@@ -25,3 +25,33 @@ ideas:
   rank: 4
   tag: i like shoes
   resource: adding resource
+- title: 'alex '
+  description: can't play chess
+  tag: turtle
+- title: turtle
+  description: dolphin
+  tag: swim
+- title: turtles
+  description: dolphins
+  tag: ocean
+- title: one more
+  description: time
+  tag: baby
+- title: dolphin
+  description: turtles
+  tag: swim
+- title: turtle turtle
+  description: dolphin dolphin
+  tag: swim
+- title: ''
+  description: ''
+  tag: ''
+- title: turtles turtle
+  description: dolphins dolphin
+  tag: ocean
+- title: turtles swim slow
+  description: dolphins swim fast
+  tag: ''
+- title: alex can't play chess
+  description: been schoolin' him lately
+  tag: ''

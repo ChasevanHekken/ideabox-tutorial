@@ -6,3 +6,4 @@ Bundler.require
 require 'app'
 
 run IdeaBoxApp
+
