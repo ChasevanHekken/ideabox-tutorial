@@ -1,5 +1,5 @@
 require 'yaml/store'
-# is this a comment here ok yes ruby
+# asdjflkajds;lfj al;sdfjla;sdfj l;af alsdfj al;sdfds faslkfjdal;sdfj;lasdfsdf
 class IdeaStore
 
   def self.database
